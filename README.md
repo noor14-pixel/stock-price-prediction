@@ -10,37 +10,36 @@ Use historical stock data to predict the **next day's closing price** using feat
 ---
 
 ## 📁 Dataset Used
-- **Source**: Yahoo Finance
-- **Accessed via**: `yfinance` Python library
-- **Stock Example**: Apple (AAPL) / Tesla (TSLA)
-- **Features Used**: `Open`, `High`, `Low`, `Volume`
+- **Source**: Yahoo Finance  
+- **Accessed via**: `yfinance` Python library  
+- **Stock Example**: Apple (AAPL)  
+- **Features Used**: `Open`, `High`, `Low`, `Volume`  
 - **Target Variable**: `Close`
 
 ---
 
-## 🤖 Models Applied
+## 🤖 Model Applied
 - **Linear Regression**
-- **Random Forest Regressor**
 
 ---
 
 ## 📊 Key Results and Findings
-- **Random Forest** performed better than Linear Regression on most runs due to its ability to model non-linear patterns.
-- **Evaluation Metrics**:
-  - Mean Absolute Error (MAE)
-  - Root Mean Squared Error (RMSE)
-- **Visualization**: Actual vs Predicted closing prices were plotted to assess model performance visually.
+- **R² Score**: `0.9291`  
+- **RMSE**: `3.77`
+
+The model performed well, achieving a strong R² value and low RMSE, indicating that **Linear Regression** was effective in capturing the trend of stock prices in this short-term prediction setting.
+
+- **Visualization**: A plot of actual vs predicted closing prices helped visually confirm model performance.
 
 ---
 
 ## 🛠️ Skills Demonstrated
-- Time series data handling
-- API-based data fetching (`yfinance`)
-- Regression modeling
-- Performance evaluation (MAE, RMSE)
-- Plotting and result interpretation
+- Time series data handling  
+- API-based data fetching with `yfinance`  
+- Regression modeling with `sklearn`  
+- Model evaluation using R² and RMSE  
+- Data visualization with `matplotlib`
 
 ---
 
-> 📌 This task builds practical skills in working with real-time financial data and applying ML models for prediction.
-
+> 📌 This task enhanced my understanding of financial data and how simple regression techniques can be used for predictive modeling.
